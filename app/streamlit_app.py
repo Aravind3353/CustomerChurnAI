@@ -47,3 +47,7 @@ X_input = X_input[model_features]
 if st.button("Predict"):
     prediction = model.predict(X_input)[0]
     st.success("Prediction: **Churn**" if prediction == 1 else "Prediction: **Not Churn**")
+
+if __name__ == "__main__":
+    main()
+
