@@ -26,18 +26,20 @@ To build a predictive model that identifies whether a customer is likely to chur
 To run this project, please follow the steps below to create your own Python environment:
 
 **1. Clone the repository**
-bash:
 
-git clone https://github.com/Aravind3353/CustomerChurnAI.git
-cd CustomerChurnAI
+bash:
+>git clone https://github.com/Aravind3353/CustomerChurnAI.git
+>cd CustomerChurnAI
 
 **2. Create a virtual environment**
+
 Using venv (built-in with Python 3.6+):
 
 bash:
 
-python -m venv venv
-source venv/bin/activate     # On Windows use: venv\Scripts\activate
+>python -m venv venv
+>source venv/bin/activate
+># On Windows use: venv\Scripts\activate
 Or using conda (if you prefer):
 
 bash:
@@ -46,11 +48,13 @@ conda create --name myenv python=3.9
 conda activate myenv
 
 **3. Install the dependencies manually**
+
 You can install the main libraries individually:
 
 bash:
 
-pip install streamlit pandas numpy scikit-learn pillow
+>pip install streamlit pandas numpy scikit-learn pillow
+
 💡 If you run into issues with pillow, try installing a version below 10.0:
 
 bash:
@@ -58,9 +62,11 @@ bash:
 pip install "pillow<10"
 
 **4. Run the Streamlit app**
+
 bash
 
 streamlit run app.py
+
 📁 Make sure you're in the correct directory where app.py is located.
 
 **🛠 Recommended Python Version**
