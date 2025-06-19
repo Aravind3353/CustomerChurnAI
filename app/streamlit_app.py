@@ -1,5 +1,3 @@
-# streamlit_app.py
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -31,19 +29,15 @@ data = {
     'SeniorCitizen': [SeniorCitizen]
 }
 
-# Ensure all features are included
 X_input = pd.DataFrame(data)
 
-# Fill missing model features with 0
 model_features = model.get_booster().feature_names
 for col in model_features:
     if col not in X_input.columns:
         X_input[col] = 0
 
-# Reorder columns to match training data
 X_input = X_input[model_features]
 
-# Predict button
 if st.button("Predict"):
     prediction = model.predict(X_input)[0]
     st.success("Prediction: **Churn**" if prediction == 1 else "Prediction: **Not Churn**")
