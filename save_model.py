@@ -14,7 +14,6 @@ y = df['Churn']
 model = XGBClassifier(use_label_encoder=False, eval_metric='logloss')
 model.fit(X, y)
 
-# Save model to 'models/' folder
 joblib.dump(model, 'models/churn_model.pkl')
 
 print("✅ Model saved as models/churn_model.pkl")
