@@ -37,15 +37,16 @@ Using venv (built-in with Python 3.6+):
 
 bash:
 
->python -m venv venv
+>python -m venv churnenv
 >source venv/bin/activate
-># On Windows use: venv\Scripts\activate
+>venv\Scripts\activate
+
 Or using conda (if you prefer):
 
 bash:
 
-conda create --name myenv python=3.9
-conda activate myenv
+>conda create --name myenv python=3.9
+>conda activate myenv
 
 **3. Install the dependencies manually**
 
